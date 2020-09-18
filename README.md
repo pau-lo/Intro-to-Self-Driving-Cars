@@ -1,4 +1,4 @@
-# intro-self-driving-cars
+# intro-to-self-driving-cars
 
 
-All the projects source code related to intro to self driving car nanodegree @Udacity.
+All the projects source code related to intro to self driving cars nanodegree from Udacity.
