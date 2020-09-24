@@ -79,10 +79,10 @@ Simulation::Simulation(vector<vector<char>> map,
 
 /**
 You can test your code by running this function.
-
 Do that by first compiling this file and then
 running the output.
 */
+
 // int main() {
 
 // 	vector < vector <char> > map;
