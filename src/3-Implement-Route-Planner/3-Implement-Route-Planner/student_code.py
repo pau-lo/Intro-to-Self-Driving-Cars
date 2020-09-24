@@ -1,12 +1,8 @@
 '''
 Inspired by:
-
 https://en.wikipedia.org/wiki/A*_search_algorithm
-
 and
-
 https://www.redblobgames.com/pathfinding/a-star/implementation.html
-
 '''
 
 
@@ -24,6 +20,7 @@ def get_heuristic(start, goal):
 #  A* uses both the heuristic and the ordering from Dijkstra’s Algorithm.
 # creating the A * algorithm
 
+
 def shortest_path(M, start, goal):
     # creating priority queue
     open_nodes = PriorityQueue()
@@ -38,7 +35,7 @@ def shortest_path(M, start, goal):
     # For each node, the cost of getting from the start node to the next node
     cost_so_far = {start: 0}  # start, 0
 
-    while not open_nodes.empty():  
+    while not open_nodes.empty():
         current = open_nodes.get()  # select path with lowest cost
 
         if current == goal:
