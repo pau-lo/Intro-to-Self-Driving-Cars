@@ -1,4 +1,9 @@
-from IPython.display import Javascript, display_javascript, HTML, IFrame
+from IPython.display import(
+    Javascript,
+    display_javascript,
+    HTML,
+    IFrame
+)
 import time
 
 
