@@ -97,13 +97,15 @@ def generate_data(
 
     for i in range(len(time_groundtruth) - 1):
         # calculate delta_t and convert to seconds
-        time_difference = (time_groundtruth[i + 1] - time_groundtruth[i]) / 1000
+        time_difference = (
+            time_groundtruth[i + 1] - time_groundtruth[i]) / 1000
 
         # convert velocity from km/h to m/s
         velocity = 1000 * velocity_groundtruth[i] / (60 * 60)
 
         # convert acceleration from km/h^2 to m/s^2
-        acceleration = 1000 * acceleration_groundtruth[i] / math.pow(60 * 60, 2)
+        acceleration = 1000 * acceleration_groundtruth[i] / math.pow(60 * 60,
+                                                                     2)
 
         # calculate distance traveled within the interval based on the velocity
         # at [i] and the acceleration
@@ -113,7 +115,7 @@ def generate_data(
 
         distance_groundtruth.append(x)
 
-    return time_groundtruth, distance_groundtruth, velocity_groundtruth, acceleration_groundtruth # noqa
+    return time_groundtruth, distance_groundtruth, velocity_groundtruth, acceleration_groundtruth  # noqa
 
 
 def generate_lidar(distance_groundtruth, standard_deviation):
