@@ -153,7 +153,7 @@ class Matrix(object):
 
         # error checking
         if self.h != other.h or self.w != other.w:
-            raise(ValueError, "Matrices can only be added if the dimensions are the same")  # noqa
+            raise(ValueError, "Matrices can only be added if the dimensions are the same")  #  noqa
 
         adding = []
 
