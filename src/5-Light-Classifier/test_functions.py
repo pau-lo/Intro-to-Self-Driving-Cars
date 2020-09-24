@@ -3,7 +3,6 @@ import unittest
 from IPython.display import Markdown, display
 
 
-
 # Helper functions for printing markdown text (text in color/bold/etc)
 def printmd(string):
     display(Markdown(string))
@@ -64,11 +63,3 @@ class Tests(unittest.TestCase):
         
         # No red lights are classified as green; test passed
         print_pass()
-
-
-
-
-
-
-
-
